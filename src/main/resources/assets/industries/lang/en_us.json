@@ -1,0 +1,14 @@
+{
+  "documentation.industries.tab.description": "Description",
+  "documentation.industries.tab.stats": "Stats",
+  "documentation.industries.itemtooltip": "§4Press §7§l[§4§lALT§7§l] §r§4to open documentation.",
+
+  "item.industries.raw_tanzanite": "Raw Tanzanite",
+  "item.industries.raw_tanzanite.description_1": "Raw Tanzanite ore. Found",
+  "item.industries.raw_tanzanite.description_2": "underground. Smelt in",
+  "item.industries.raw_tanzanite.description_3": "a furnace to get Tanzanite.",
+  "item.industries.raw_tanzanite.stats.hardness": "Hardness: %d",
+  "item.industries.raw_tanzanite.stats.minheight": "Min Height: Y%d",
+  "item.industries.raw_tanzanite.stats.maxheight": "Max Height: Y%d",
+  "item.industries.raw_tanzanite.stats.mintoollevel": "Min Tool Level: %d"
+}

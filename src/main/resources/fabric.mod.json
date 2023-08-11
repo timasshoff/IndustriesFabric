@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "industries",
+  "version": "${version}",
+
+  "name": "INDUSTRIES",
+  "description": "This is an example description! Tell everyone what your mod is about!",
+  "authors": [
+    "Skytendo06"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.skytendo.industries.Industries"
+    ]
+  },
+  "mixins": [
+    "industries.mixins.json"
+  ],
+  "client": [
+    "net.skytendo.industries.IndustriesClient"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.19",
+    "fabric-api": "*",
+    "minecraft": "~1.19.4",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
