@@ -3,6 +3,8 @@
   "documentation.industries.tab.stats": "Stats",
   "documentation.industries.itemtooltip": "§4Press §7§l[§4§lALT§7§l] §r§4to open documentation.",
 
+  "itemGroup.industries.default": "INDUSTRIES",
+
   "item.industries.raw_tanzanite": "Raw Tanzanite",
   "item.industries.raw_tanzanite.description_1": "Raw Tanzanite ore. Found",
   "item.industries.raw_tanzanite.description_2": "underground. Smelt in",
@@ -10,5 +12,22 @@
   "item.industries.raw_tanzanite.stats.hardness": "Hardness: %d",
   "item.industries.raw_tanzanite.stats.minheight": "Min Height: Y%d",
   "item.industries.raw_tanzanite.stats.maxheight": "Max Height: Y%d",
-  "item.industries.raw_tanzanite.stats.mintoollevel": "Min Tool Level: %d"
+  "item.industries.raw_tanzanite.stats.mintoollevel": "Min Tool Level: %d",
+
+  "block.industries.industrial_stone": "Industrial Stone",
+  "item.industries.industrial_stone.description_1": "Industrial Stone is a version",
+  "item.industries.industrial_stone.description_2": "of Hard Stone. It has been",
+  "item.industries.industrial_stone.description_3": "edited in such a way, that",
+  "item.industries.industrial_stone.description_4": "it makes sense to use it in",
+  "item.industries.industrial_stone.description_5": "basic machines.",
+  "item.industries.industrial_stone.stats.hardness": "Hardness: %d",
+
+  "block.industries.hard_stone": "Hard Stone",
+  "item.industries.hard_stone.description_1": "Just a harder version of",
+  "item.industries.hard_stone.description_2": "regular stone. Found",
+  "item.industries.hard_stone.description_3": "everywhere where stone is",
+  "item.industries.hard_stone.description_4": "found.",
+  "item.industries.hard_stone.stats.hardness": "Hardness: %d",
+  "item.industries.hard_stone.stats.minheight": "Min Height: Y%d",
+  "item.industries.hard_stone.stats.maxheight": "Max Height: Y%d"
 }

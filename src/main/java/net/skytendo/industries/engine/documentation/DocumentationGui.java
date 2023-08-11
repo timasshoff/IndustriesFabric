@@ -42,7 +42,7 @@ public class DocumentationGui extends LightweightGuiDescription {
 
         if (info.Image != null)  {
             WSprite image = new WSprite(info.Image);
-            infoPanel.add(image, 19, 1, 11, 11);
+            infoPanel.add(image, 19, 2, 11, 11);
         }
 
         WScrollPanel infoScrollPanel = new WScrollPanel(infoPanel);

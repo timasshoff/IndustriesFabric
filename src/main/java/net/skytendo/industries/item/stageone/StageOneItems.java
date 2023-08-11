@@ -1,4 +1,4 @@
-package net.skytendo.industries.item;
+package net.skytendo.industries.item.stageone;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -9,11 +9,10 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.skytendo.industries.Industries;
-import net.skytendo.industries.engine.IndustriesItem;
 import net.skytendo.industries.engine.documentation.DocumentedIndustriesItem;
 import net.skytendo.industries.iteminfos.RawTanzaniteItemInfo;
 
-public class ModItems {
+public class StageOneItems {
     public static final Item RAW_TANZANITE = registerItem("raw_tanzanite",
             new DocumentedIndustriesItem(new FabricItemSettings(), new RawTanzaniteItemInfo()), ItemGroups.INGREDIENTS);
 
@@ -28,7 +27,6 @@ public class ModItems {
     }
 
     public static void registerModItems() {
-        Industries.LOGGER.debug("Registering mod items for " + Industries.MOD_ID);
+        Industries.LOGGER.debug("Registering stage 1 mod items for " + Industries.MOD_ID);
     }
-
 }

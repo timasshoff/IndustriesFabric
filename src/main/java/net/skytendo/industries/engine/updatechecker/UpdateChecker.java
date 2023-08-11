@@ -2,6 +2,8 @@ package net.skytendo.industries.engine.updatechecker;
 
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.text.Text;
+import net.skytendo.industries.engine.documentation.DocumentationGui;
+import net.skytendo.industries.engine.documentation.DocumentationScreen;
 
 public class UpdateChecker {
 
@@ -10,8 +12,7 @@ public class UpdateChecker {
      */
     public static void checkForFeatureUpdates() {
         if (isFeatureOutdated()) {
-            MinecraftClient mc = MinecraftClient.getInstance();
-            mc.inGameHud.getChatHud().addMessage(Text.literal("Feature Outdated"));
+            //MinecraftClient.getInstance().setScreen(new FeatureOutdatedScreen(new FeatureOutdatedGui(getVersion())));
         }
     }
 
@@ -21,7 +22,10 @@ public class UpdateChecker {
      */
     public static Version getVersion() {
         // TODO Write Update Checker Code to provide RETURN with accurate information
-        return new Version();
+        Version version = new Version();
+        version.featureOutdated = true;
+
+        return version;
     }
 
     /**

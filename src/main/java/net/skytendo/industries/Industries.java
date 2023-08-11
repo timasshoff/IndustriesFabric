@@ -3,12 +3,13 @@ package net.skytendo.industries;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.networking.v1.PacketSender;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayConnectionEvents;
-import net.minecraft.client.MinecraftClient;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.network.ServerPlayNetworkHandler;
-import net.minecraft.text.Text;
+import net.skytendo.industries.block.stageone.StageOneBlocks;
 import net.skytendo.industries.engine.updatechecker.UpdateChecker;
-import net.skytendo.industries.item.ModItems;
+import net.skytendo.industries.item.ModItemGroup;
+import net.skytendo.industries.item.stageone.StageOneItems;
+import net.skytendo.industries.world.ModPlacedFeatures;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -18,7 +19,12 @@ public class Industries implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		ModItems.registerModItems();
+		ModItemGroup.registerItemGroups();
+
+		StageOneItems.registerModItems();
+		StageOneBlocks.registerModBlocks();
+
+		ModPlacedFeatures.addFeatures();
 
 		ServerPlayConnectionEvents.JOIN.register(new ServerPlayConnectionEvents.Join() {
 			@Override

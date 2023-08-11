@@ -1,25 +1,27 @@
 package net.skytendo.industries.engine.documentation;
 
+import net.minecraft.block.Block;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;
 import net.minecraft.world.World;
+import net.skytendo.industries.engine.IndustriesBlockItem;
 import net.skytendo.industries.engine.IndustriesItem;
 import net.skytendo.industries.engine.ItemInfo;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class DocumentedIndustriesItem extends IndustriesItem {
+public class DocumentedIndustriesBlockItem extends IndustriesBlockItem {
 
     private int ticksAltDown = 0;
     private final int neededTicks = 36;
     private int progress = 0;
 
-    public DocumentedIndustriesItem(Settings settings, ItemInfo itemInfo) {
-        super(settings, itemInfo);
+    public DocumentedIndustriesBlockItem(Block block, Settings settings, ItemInfo itemInfo) {
+        super(block, settings, itemInfo);
         this.itemInfo = itemInfo;
     }
 
