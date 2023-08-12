@@ -5,11 +5,15 @@ import net.fabricmc.fabric.api.networking.v1.PacketSender;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayConnectionEvents;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.network.ServerPlayNetworkHandler;
+import net.skytendo.industries.block.ModFlammableBlocks;
+import net.skytendo.industries.block.ModStrippableBlocks;
 import net.skytendo.industries.block.stageone.StageOneBlocks;
+import net.skytendo.industries.data.ModWorldGenerator;
 import net.skytendo.industries.engine.updatechecker.UpdateChecker;
 import net.skytendo.industries.item.ModItemGroup;
 import net.skytendo.industries.item.stageone.StageOneItems;
-import net.skytendo.industries.world.ModPlacedFeatures;
+import net.skytendo.industries.world.feature.ModPlacedFeatures;
+import net.skytendo.industries.world.gen.ModWorldGeneration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -25,6 +29,9 @@ public class Industries implements ModInitializer {
 		StageOneBlocks.registerModBlocks();
 
 		ModPlacedFeatures.addFeatures();
+		ModWorldGeneration.generateModWorldGen();
+		ModFlammableBlocks.registerFlammableBlocks();
+		ModStrippableBlocks.registerStrippables();
 
 		ServerPlayConnectionEvents.JOIN.register(new ServerPlayConnectionEvents.Join() {
 			@Override

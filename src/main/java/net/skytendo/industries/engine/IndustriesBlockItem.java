@@ -12,4 +12,8 @@ public class IndustriesBlockItem extends BlockItem {
         super(block, settings);
         this.itemInfo = itemInfo;
     }
+
+    public IndustriesBlockItem(Block block, Settings settings) {
+        super(block, settings);
+    }
 }

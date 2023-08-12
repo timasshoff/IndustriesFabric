@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "industries:chestnut_log",
+    "industries:chestnut_wood",
+    "industries:stripped_chestnut_log",
+    "industries:stripped_chestnut_wood"
+  ]
+}

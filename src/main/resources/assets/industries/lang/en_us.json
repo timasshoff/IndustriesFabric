@@ -29,5 +29,20 @@
   "item.industries.hard_stone.description_4": "found.",
   "item.industries.hard_stone.stats.hardness": "Hardness: %d",
   "item.industries.hard_stone.stats.minheight": "Min Height: Y%d",
-  "item.industries.hard_stone.stats.maxheight": "Max Height: Y%d"
+  "item.industries.hard_stone.stats.maxheight": "Max Height: Y%d",
+
+  "block.industries.industrial_planks": "Industrial Planks",
+  "item.industries.industrial_planks.description_1": "Industrial Planks are made",
+  "item.industries.industrial_planks.description_2": "from chestnut trees. Chestnut",
+  "item.industries.industrial_planks.description_3": "trees are found in every oak",
+  "item.industries.industrial_planks.description_4": "forest. Due to its characteristics,",
+  "item.industries.industrial_planks.description_5": "it can be used in simple",
+  "item.industries.industrial_planks.description_6": "machines and workbenches.",
+  "item.industries.industrial_planks.stats.hardness": "Hardness: %d",
+
+  "block.industries.chestnut_log": "Chestnut Log",
+  "block.industries.chestnut_wood": "Chestnut Wood",
+  "block.industries.stripped_chestnut_log": "Stripped Chestnut Log",
+  "block.industries.stripped_chestnut_wood": "Stripped Chestnut Wood",
+  "block.industries.chestnut_sapling": "Chestnut Sapling"
 }

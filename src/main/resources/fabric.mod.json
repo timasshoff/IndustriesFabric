@@ -20,6 +20,12 @@
   "entrypoints": {
     "main": [
       "net.skytendo.industries.Industries"
+    ],
+    "client": [
+      "net.skytendo.industries.IndustriesClient"
+    ],
+    "fabric-datagen": [
+      "net.skytendo.industries.IndustriesModDataGeneration"
     ]
   },
   "mixins": [
